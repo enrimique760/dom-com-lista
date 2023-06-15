@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iniciando com DOM</title>
+</head>
+<body>
+    <!--faça um programa que "pegue"uma lista <ol>no html e coloque
+    negito dinamicamente a partir de um nome digitado no seu imput. -->
+    <input id="nome"placeholder="digite um nome " onkeyup="destacar()">
+    <ol class="listadeNomes">
+      <li>joão</li>
+      <li>marcia</li>
+      <li>fabiana</li>
+      <li>jorge</li>
+      <li>silvana</li>
+      <li>luiz</li>
+      <li>carlos</li>
+      <li>pablo</li>
+    </ol>
+    <script>
+        function destacar(){
+            console.log("entrei");
+            var nome = document.querySelector("nome");
+            var lista = document.querySelector(".listaDeNome");
+            var listaDeNomes = lista.querySelectorAll("li");
+            var novalista = [];
+
+            for (let i = 0; i < listaDeNomes.length; i++) {
+                var nomeAtual = listaDeNomes[i].textContent;
+
+                
+            }
+        }
+    </script>
+</body>
+</html>
